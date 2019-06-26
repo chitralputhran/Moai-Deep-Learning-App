@@ -1,1 +1,1 @@
-# :moai: Moai | Deep Learning Application
+# :moyai: Moai | Deep Learning Application
