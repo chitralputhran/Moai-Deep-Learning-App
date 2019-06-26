@@ -1,0 +1,74 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    </style>
+<link rel="shortcut icon" href="{{url_for('static', filename= 'favicon.ico')}}" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename= 'apple-touch-icon.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename= 'favicon-32x32.png')}}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename= 'favicon-16x16.png')}}">
+    <link rel="manifest" href="{{url_for('static', filename= 'site.webmanifest')}}">
+
+<title>Moai | DL App</title>
+</head>
+<body>
+
+  <div class="jumbotron">
+
+      <div class = "container">
+    <h1 class="display-4"> <img src="{{url_for('static', filename= 'android-chrome-192x192.png')}}" > Moai | Deep Learning App  </h1>
+    <br>
+    <br>
+    <p class="lead">This is a web application made with the help of Flask, a microframework for Python based on Werkzeug, Jinja 2, 
+      and good intentions. On the backend, a deep learning model (ResNet-50) is classifying the given image file into various categories. 
+      ResNet-50 is a convolutional neural network that is trained on more than a million images from the ImageNet database. 
+      The network is 50 layers deep and can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. 
+      As a result, the network has learned rich feature representations for a wide range of images. 
+      The network has an image input size of 224-by-224. </p>
+    <hr class="my-4">
+    <p>Using the custom form below, enter an image file (.jpg, .png or .jpeg) and hit the submit button. The image file will then be preprocessed and forwarded to the deep learning model for classification. For more projects like these, just on the Github button.  </p>
+    <a class="btn btn-primary btn-lg" href="https://chitralputhran.github.io/" role="button">GitHub Portfolio</a>
+    </div>
+    </div>
+  
+  <br>
+
+	<div class = "container">
+    <p class="lead font-weight-bold">Prediction by the model:</p>
+    <img src="{{ url_image }}" alt="Image">
+
+    <img src="{{ url_graph }}" alt="Chart">
+  </div>
+  
+  <br>
+
+  
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <footer class="page-footer">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://chitralputhran.github.io"> Chitral Puthran</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
