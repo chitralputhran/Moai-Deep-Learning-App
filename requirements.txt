@@ -3,7 +3,7 @@ astor==0.8.0
 certifi==2019.3.9
 Click==7.0
 cycler==0.10.0
-Flask==1.0.3
+Flask==2.2.5
 gast==0.2.2
 grpcio==1.21.1
 gunicorn==19.9.0
